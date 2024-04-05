@@ -1,0 +1,106 @@
+/*FONTSS*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Manrope:wght@200..800&display=swap');*/
+
+/*RESETTING VALUE*/
+* {
+    /*margin: 0px;*/
+    padding: 0px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+html { 
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;    
+    background: no-repeat center/cover url(/bgimg/pexels-aleksandar-pasaric-2385210.jpg);
+}
+
+/*NAVIGATION BAR*/
+nav {
+    position: relative;
+}
+.nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: -1; /* Ensure it's behind the text */
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0; /* Reset margin to remove any default margin */
+    padding: 0; /* Reset padding to remove any default padding */
+}
+.nav ul li {
+    list-style-type: none;
+}
+.nav ul li a {
+    margin: 3px 0px;
+    padding: 5px 8px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+.nav ul li a:active {
+    background-color: white;
+    color: #000000;
+}
+
+/*CONTAINER*/
+.container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/*ELEMENTS INSIDE CONTAINER*/
+#decoration {
+    display: relative;
+    border: 4px solid #48f1ff;
+    border-radius: 2rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    /*text-align: center;*/
+    /*margin: auto auto*/
+    padding: 1rem;
+}
+#decoration ul li {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+#decoration ul li a {
+    
+    text-decoration: none;
+    color: #48f1ff;
+    font-weight: 900;
+}
+#decoration ul li a img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+}
